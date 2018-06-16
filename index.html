@@ -109,21 +109,21 @@
             <div class="flex">
                 <button class="social fb">
                     <a href="#" class="no-decor">
-                        <img src="facebook.png" alt="facebook">
+                        <img src="img/facebook.png" alt="facebook">
                     </a>
                 </button>
                 <button class="social twitter" <a href="#" class="no-decor">
-                    <img src="twitter.png" alt="twitter">
+                    <img src="img/twitter.png" alt="twitter">
                     </a>
                 </button>
                 <button class="social be">
                     <a href="#" class="no-decor">
-                        <img src="be.png" alt="be">
+                        <img src="img/be.png" alt="be">
                     </a>
                 </button>
                 <button class="social dribble">
                     <a href="#" class="no-decor"></a>
-                    <img src="dribb.png" alt="dribble">
+                    <img src="img/dribb.png" alt="dribble">
                 </button>
             </div>
         </div>
@@ -132,22 +132,6 @@
 </body>
 
 
-<script>
-    function toggleMenu() {
-        var menu = document.querySelector('#nav-menu');
-        // console.log('main menu', menu)
-        menu.classList.toggle('open')
-        var menuIcon = document.querySelector('.menu-resp-btn');
-        (menuIcon.innerText === '☰') ? menuIcon.innerHTML = '&times;': menuIcon.innerText = '☰'
-    }
-
-function openModal(){
-    var modalSelector = document.querySelector('.modal');
-    console.log(modalSelector);
-    
-    modalSelector.classList.toggle('show-modal')
-}
-
-</script>
+<script src="js/main.js"></script>
 
 </html>
