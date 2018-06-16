@@ -11,18 +11,30 @@
 <body>
 
     <div class="modal flex container column">
-            <div class="modal-title flex">
-                <h1>Join us to get access to the latest stories!</h1>
-                <span>&times;</span>
-            </div>
-            <div class="modal-content flex column">
-                <input type="email">
-                <button>Send</button>
+        <div class="modal-title flex space-between">
+            <h1>Join us to get access to the latest stories!</h1>
+            <span onclick="openModal()">&times;</span>
+        </div>
+        <div class="modal-content flex column">
+            <input class="mail-sumbit" type="email" placeholder="Enter email to join!">
+            <button onclick="saveMail();openModal();">Send</button>
         </div>
     </div>
 
-
-
+    <!-- 
+<div class="modal-container flex space-even">
+    <div class="modal flex container column just-center align-center space-even">
+            <div class="modal-title flex space-between">
+                <h1>Join us to get access to the latest stories!</h1>
+                <span onclick="openModal()">&times;</span>
+            </div>
+            <div class="modal-content flex column">
+                <input class="mail-sumbit" type="email">
+                <button onclick="openModal()">Send</button>
+        </div>
+    </div>
+</div>
+     -->
 
     <div class="top-bar">
         <header class="container flex align-center space-between">

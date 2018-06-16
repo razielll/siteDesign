@@ -160,10 +160,10 @@ body>.modal {
 .modal-title {
     margin: 0 auto;
     color: white;
-    justify-content: space-between;
 }
 
 .modal-title span {
+    cursor: pointer;
     color: red;
     order: 1;
     font-size: 3em;
@@ -177,7 +177,6 @@ body>.modal {
 div.show-modal {
     display: flex;
 }
-
 
 /* Helpers */
 
