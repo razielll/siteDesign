@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Design to live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+
+    <div class="modal flex container column">
+            <div class="modal-title flex">
+                <h1>Join us to get access to the latest stories!</h1>
+                <span>&times;</span>
+            </div>
+            <div class="modal-content flex column">
+                <input type="email">
+                <button>Send</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="top-bar">
+        <header class="container flex align-center space-between">
+            <h1 class="logo">blogin</h1>
+            <button class="menu-resp-btn" onclick="toggleMenu()">☰</button>
+            <nav class="nav-bar flex">
+                <ul id="nav-menu" class="nav-bar flex clean-list">
+                    <li>
+                        <a href="#">journal</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">work</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="container">
+        <ul class="clean-list">
+            <li class="flex">
+                <img src="img/img001.png" alt="" />
+                <div class="blog-item flex column space-between">
+                    <h2>Duis aute irure dolor in henderit in voluptate. </h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </p>
+                    <a href="#" class="no-decor" onclick="openModal()">
+                        <button class="btn-read">
+                            Continue reading
+                        </button>
+                    </a>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="img/img002.png" alt="" />
+                <div class="blog-item flex column space-between">
+                    <h2>Duis aute irure dolor in henderit in voluptate. </h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </p>
+                    <a href="#" class="no-decor" onclick="openModal()">
+                        <button class="btn-read">
+                            Continue reading
+                        </button>
+                    </a>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="img/img003.png" alt="" />
+                <div class="blog-item flex column space-between">
+                    <h2>Duis aute irure dolor in henderit in voluptate. </h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </p>
+                    <a href="#" class="no-decor" onclick="openModal()">
+                        <button class="btn-read">
+                            Continue reading
+                        </button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div class="container page-nav flex space-between">
+        <a href="#" class="prev-link no-decor">previous</a>
+        <a href="#" class="next-link no-decor">next</a>
+    </div>
+    <footer class="">
+        <div class="container flex column align-center space-between">
+            <h1 class="logo">blogin</h1>
+            <span>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</span>
+            <div class="flex">
+                <button class="social fb">
+                    <a href="#" class="no-decor">
+                        <img src="facebook.png" alt="facebook">
+                    </a>
+                </button>
+                <button class="social twitter" <a href="#" class="no-decor">
+                    <img src="twitter.png" alt="twitter">
+                    </a>
+                </button>
+                <button class="social be">
+                    <a href="#" class="no-decor">
+                        <img src="be.png" alt="be">
+                    </a>
+                </button>
+                <button class="social dribble">
+                    <a href="#" class="no-decor"></a>
+                    <img src="dribb.png" alt="dribble">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('#nav-menu');
+        // console.log('main menu', menu)
+        menu.classList.toggle('open')
+        var menuIcon = document.querySelector('.menu-resp-btn');
+        (menuIcon.innerText === '☰') ? menuIcon.innerHTML = '&times;': menuIcon.innerText = '☰'
+    }
+
+function openModal(){
+    var modalSelector = document.querySelector('.modal');
+    console.log(modalSelector);
+    
+    modalSelector.classList.toggle('show-modal')
+}
+
+</script>
+
+</html>

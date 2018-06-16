@@ -1,0 +1,27 @@
+button.social {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    color: white;
+    border-width: 0px;
+}
+
+.social.fb:hover {
+    background-color: #516fad;
+}
+
+.social.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social.be:hover {
+    background-color: #1769ff;
+}
+
+.social.dribble:hover {
+    background-color: #f26798;
+}
