@@ -2,6 +2,8 @@
 @import 'navBar.css';
 @import 'fontFace.css';
 @import 'mediaQuery.css';
+@import 'modal.css';
+
 * {
     box-sizing: border-box;
 }
@@ -59,16 +61,16 @@ h2 {
 }
 
 button.menu-resp-btn {
-    display: none;
-    background-color: transparent;
-    color: white;
-    border-width: 0;
     cursor: pointer;
+    display: none;
+    color: white;
+    background-color: transparent;
+    border: 0;
     font-size: 1.7em;
 }
 
 #nav-menu.open {
-    transform: translate(-5%, 0);
+    transform: translate(-3%, 0);
 }
 
 main {
@@ -93,14 +95,14 @@ main li img {
 
 .btn-read {
     cursor: pointer;
-    width: 185px;
-    height: 40px;
     position: relative;
+    height: 40px;
+    width: 185px;
     color: #c2c2c2;
+    padding: 0;
     background-color: #ffffff;
     border: 2px solid #c2c2c2;
     border-radius: 20px;
-    padding: 0;
     transition: all .4s;
 }
 
@@ -110,7 +112,7 @@ main li img {
     right: 15px;
 }
 
-a>.btn-read:hover {
+.btn-read:hover {
     padding: 0px 30px 0px 0px;
     color: #58c93a;
     border: 2px solid #58c93a;
@@ -127,28 +129,25 @@ a>.btn-read:hover {
 }
 
 .page-nav>a {
+    margin: 0;
     color: #818181;
 }
 
 .prev-link::before {
     content: '←';
-    margin-right: 10px;
     position: relative;
-    bottom: 3px;
-}
-
-.prev-link:hover {
-    color: #58c93a;
+    margin-right: 10px;
+    bottom: 2px;
 }
 
 .next-link::after {
     content: '→';
-    margin-left: 10px;
     position: relative;
-    bottom: 3px;
+    margin-left: 10px;
+    bottom: 2px;
 }
 
-.next-link:hover {
+.page-nav>a:hover {
     color: #58c93a;
 }
 
@@ -161,43 +160,6 @@ footer {
 footer h1.logo {
     margin-top: 80px;
     color: #292929;
-}
-
-div.modal-container {
-    display: none;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background-color: #606060af;
-    z-index: 1;
-}
-
-.modal {
-    color: #4f4e4e;
-    background-color: white;
-    height: 300px;
-    position: fixed;
-    /* left: 20vw; */
-    /* padding: 25px; */
-    top: 15vw;
-    z-index: 2;
-}
-
-.modal-title h1 {
-    padding: 25px;
-    margin: 0;
-}
-
-.mail-sumbit {
-    margin: 15px;
-}
-
-.modal span {
-    cursor: pointer;
-    color: red;
-    padding: 10px;
-    font-size: 3em;
-    align-self: flex-end;
 }
 
 div.show-modal {
@@ -228,7 +190,7 @@ div.drop-down-menu a li {
     padding: 15px 5px;
 }
 
-div.drop-down-menu ul a li:hover {
+div.drop-down-menu li:hover {
     color: #58c93a;
 }
 

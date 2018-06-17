@@ -1,0 +1,34 @@
+div.modal-container {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #606060af;
+    z-index: 1;
+}
+
+.modal {
+    color: #4f4e4e;
+    background-color: white;
+    height: 300px;
+    position: fixed;
+    top: 15vw;
+    z-index: 2;
+}
+
+.modal-title h1 {
+    padding: 25px;
+    margin: 0;
+}
+
+.mail-sumbit {
+    margin: 15px;
+}
+
+.modal span {
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+    font-size: 3em;
+    align-self: flex-end;
+}
