@@ -18,7 +18,7 @@
                 <span onclick="openModal()">&times;</span>
             </div>
             <div class="flex column align-center">
-                <input class="mail-sumbit" type="email" placeholder="Enter your email here">
+                <input class="mail-sumbit " type="email" placeholder="Enter your email here">
                 <button onclick="openModal()">Send</button>
             </div>
         </div>
@@ -30,8 +30,24 @@
             <h1 class="logo">blogin</h1>
             <button class="menu-resp-btn" onclick="toggleMenu()">☰</button>
             <ul id="nav-menu" class="flex clean-list">
-                <li>
-                    <a class="active" href="#">journal</a>
+                <li class="journal-drop-down">
+                    <a class="active" href="#">journal▼</a>
+                    <div class="drop-down-menu">
+                        <ul class="clean-list drop-down-menu ">
+                            <a href="#" class="drop-down-item no-decor">
+                                <li>July 2017</li>
+                            </a>
+                            <a href="#" class="drop-down-item no-decor">
+                                <li>April 2017</li>
+                            </a>
+                            <a href="#" class="drop-down-item no-decor">
+                                <li>January 2017</li>
+                            </a>
+                            <a href="#" class="drop-down-item no-decor">
+                                <li>October 2016</li>
+                            </a>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#">about</a>

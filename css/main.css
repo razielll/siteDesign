@@ -15,6 +15,12 @@ body {
     margin: 0;
 }
 
+header {
+    height: 130px;
+    color: white;
+    transition: all .3s;
+}
+
 h2 {
     margin: 0;
     color: #4f4e4e;
@@ -26,10 +32,8 @@ h2 {
     box-shadow: inset 0 -5px 0 #1e1e1e;
 }
 
-header {
-    height: 130px;
-    color: white;
-    transition: all .3s;
+.active {
+    box-shadow: inset 0 -5px 0 #58c93a;
 }
 
 .logo {
@@ -162,13 +166,20 @@ div.modal-container {
 .modal {
     color: #4f4e4e;
     background-color: white;
-    max-width: 500px;
     height: 300px;
     position: fixed;
     /* left: 20vw; */
+    padding: 25px;
     top: 15vw;
     z-index: 2;
-    margin: auto;
+}
+
+.modal-title h1 {
+    margin: 0;
+}
+
+.mail-sumbit {
+    margin: 15px;
 }
 
 .modal-title span {
@@ -183,8 +194,39 @@ div.show-modal {
     display: flex;
 }
 
-.active {
-    box-shadow: inset 0 -5px 0 #58c93a;
+li.journal-drop-down {
+    position: relative;
+}
+
+li.journal-drop-down:hover>div.drop-down-menu {
+    /* position: absolute; */
+    display: block;
+    /* z-index: 100;
+    background-color: #292929;
+    height: 50vh;
+    padding: 15px; */
+}
+
+div.drop-down-menu {
+    z-index: 1;
+    position: absolute;
+    display: none;
+    background-color: #292929;
+    height: 50vh;
+    padding: 15px;
+    /* top: 110px; */
+    /* margin: -10px; */
+}
+
+div.drop-down-menu a li {
+    box-shadow: none;
+    border-right: none;
+    color: white;
+    padding: 15px 5px;
+}
+
+div.drop-down-menu ul a li:hover {
+    color: #58c93a;
 }
 
 /* Helpers */
@@ -227,3 +269,11 @@ div.show-modal {
 .no-decor {
     text-decoration: none;
 }
+
+.base-padding {
+    padding: 20px;
+}
+
+/* .hidden {
+    display: none;
+ } */
