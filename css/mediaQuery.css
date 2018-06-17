@@ -22,11 +22,14 @@
     main a {
         margin: 15px auto 0px;
     }
+    .modal-container .modal {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 560px) {
     .top-bar header {
-        height: 90px;
+        height: 80px;
     }
     header button.menu-resp-btn {
         display: block;
@@ -75,4 +78,10 @@
     li a.active {
         box-shadow: none;
     }
+    li.journal-drop-down:hover>div.drop-down-menu {
+        background-color: transparent;
+        font-size: .4em;
+    }
+    li.journal-drop-down:hover header>ul>li {
+        display:none;
 }

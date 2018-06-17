@@ -5,6 +5,7 @@ header ul {
 header ul li {
     width: 130px;
     box-shadow: -1px 0 0 #1d1d1d;
+    text-transform: capitalize;
 }
 
 header ul li:last-child {
