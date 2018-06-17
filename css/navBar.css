@@ -1,22 +1,22 @@
-.nav-bar {
+header ul {
     height: 100%;
 }
 
-.nav-bar li {
+header ul li {
     width: 130px;
     box-shadow: -1px 0 0 #1d1d1d;
 }
 
-.nav-bar li:last-child {
+header ul li:last-child {
     border-right: 1px solid #1d1d1d;
 }
 
-.nav-bar li:hover {
+header ul li:hover {
     border-left: 1px solid #1d1d1d;
     box-shadow: inset 0 -5px 0 #58c93a;
 }
 
-.nav-bar>li>a {
+header ul>li>a {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -25,6 +25,6 @@
     text-decoration: none;
 }
 
-.nav-bar>li:active {
+header ul>li:active {
     box-shadow: inset 0 -5px 0 #58c93a;
 }

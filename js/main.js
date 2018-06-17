@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 function openModal() {
-    var modalSelector = document.querySelector('.modal');
+    var modalSelector = document.querySelector('.modal-container');
     modalSelector.classList.toggle('show-modal')
 }
 

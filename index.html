@@ -10,52 +10,39 @@
 
 <body>
 
-    <div class="modal flex container column">
-        <div class="modal-title flex space-between">
-            <h1>Join us to get access to the latest stories!</h1>
-            <span onclick="openModal()">&times;</span>
-        </div>
-        <div class="modal-content flex column">
-            <input class="mail-sumbit" type="email" placeholder="Enter email to join!">
-            <button onclick="saveMail();openModal();">Send</button>
-        </div>
-    </div>
-
-    <!-- 
-<div class="modal-container flex space-even">
-    <div class="modal flex container column just-center align-center space-even">
+    <div class="modal-container flex space-even">
+        <!-- onclick="openModal()" -->
+        <div class="modal flex container column just-center align-center ">
             <div class="modal-title flex space-between">
                 <h1>Join us to get access to the latest stories!</h1>
                 <span onclick="openModal()">&times;</span>
             </div>
-            <div class="modal-content flex column">
-                <input class="mail-sumbit" type="email">
+            <div class="flex column align-center">
+                <input class="mail-sumbit" type="email" placeholder="Enter your email here">
                 <button onclick="openModal()">Send</button>
+            </div>
         </div>
     </div>
-</div>
-     -->
+
 
     <div class="top-bar">
         <header class="container flex align-center space-between">
             <h1 class="logo">blogin</h1>
             <button class="menu-resp-btn" onclick="toggleMenu()">☰</button>
-            <nav class="nav-bar flex">
-                <ul id="nav-menu" class="nav-bar flex clean-list">
-                    <li>
-                        <a href="#">journal</a>
-                    </li>
-                    <li>
-                        <a href="#">about</a>
-                    </li>
-                    <li>
-                        <a href="#">work</a>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul id="nav-menu" class="flex clean-list">
+                <li>
+                    <a class="active" href="#">journal</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">work</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
         </header>
     </div>
     <main class="container">
@@ -109,10 +96,11 @@
                 </div>
             </li>
         </ul>
+        <div class="container page-nav flex space-between">
+            <a href="#" class="prev-link no-decor">previous</a>
+            <a href="#" class="next-link no-decor">next</a>
     </main>
-    <div class="container page-nav flex space-between">
-        <a href="#" class="prev-link no-decor">previous</a>
-        <a href="#" class="next-link no-decor">next</a>
+
     </div>
     <footer class="">
         <div class="container flex column align-center space-between">
